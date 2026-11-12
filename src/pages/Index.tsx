@@ -211,8 +211,7 @@ const HeroSection = () => (
 
       <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mt-10 text-xs md:text-sm text-muted-foreground">
         <span className="flex items-center gap-1.5"><ShieldCheck className="h-4 w-4 text-primary" />Compatible Doctolib</span>
-        <span className="flex items-center gap-1.5"><ShieldCheck className="h-4 w-4 text-primary" />Hébergé en France</span>
-        <span className="flex items-center gap-1.5"><ShieldCheck className="h-4 w-4 text-primary" />Conforme RGPD</span>
+        <span className="flex items-center gap-1.5"><ShieldCheck className="h-4 w-4 text-primary" />30 jours offerts, sans engagement</span>
       </div>
     </div>
   </section>
@@ -352,23 +351,17 @@ const TrustSection = () => (
           </div>
         </div>
 
-        <div className="grid sm:grid-cols-3 gap-4 text-sm">
+        <div className="grid sm:grid-cols-2 gap-4 text-sm">
           <div className="flex items-start gap-2">
             <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
             <p className="text-muted-foreground font-body">
-              <span className="font-semibold text-foreground">Hébergement en France</span> chez un prestataire agréé santé.
+              Nous limitons les données au strict nécessaire (nom, téléphone, horaire du rendez-vous).
             </p>
           </div>
           <div className="flex items-start gap-2">
             <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
             <p className="text-muted-foreground font-body">
-              <span className="font-semibold text-foreground">Conforme RGPD</span>, contrat de sous-traitance fourni.
-            </p>
-          </div>
-          <div className="flex items-start gap-2">
-            <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-            <p className="text-muted-foreground font-body">
-              <span className="font-semibold text-foreground">Aucune donnée médicale</span>. Juste nom, téléphone, horaire.
+              Les messages envoyés aux patients sont clairement identifiés comme automatiques, et un humain du cabinet reste joignable.
             </p>
           </div>
         </div>
@@ -453,7 +446,7 @@ const FAQSection = () => {
   const faqs = [
     { q: "Ça marche avec Doctolib ?", a: "Oui. EyesPilot se branche par-dessus sans rien changer à votre flux. Autre agenda ? On s'adapte lors de l'appel." },
     { q: "Mon secrétariat doit faire quoi ?", a: "15 minutes de formation à l'installation, et c'est tout. Le système tourne seul ensuite." },
-    { q: "Comment vous gérez les données patients ?", a: "On stocke uniquement nom, numéro et horaire du RDV. Aucune donnée médicale. Hébergement France agréé santé, contrat RGPD fourni." },
+    { q: "Comment vous gérez les données patients ?", a: `Nous limitons les données au strict nécessaire. Pour le détail de notre traitement des données, contactez-nous : ${CONTACT_EMAIL}.` },
     { q: "En combien de temps c'est installé ?", a: "48 heures. Les premiers SMS partent ensuite, les premiers avis Google tombent sous 7 à 10 jours." },
     { q: "Y a-t-il un engagement ?", a: "Non. Pilote de 30 jours gratuit sans CB. Si vous arrêtez, on désinstalle. Sinon, abonnement mensuel sans engagement." },
     { q: "Combien ça coûte après la bêta ?", a: "~149 € / mois, SMS inclus. Les pilotes gardent leur tarif bêta à vie." },
