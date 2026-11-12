@@ -210,7 +210,7 @@ const HeroSection = () => (
       </div>
 
       <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mt-10 text-xs md:text-sm text-muted-foreground">
-        <span className="flex items-center gap-1.5"><ShieldCheck className="h-4 w-4 text-primary" />Compatible Doctolib</span>
+        <span className="flex items-center gap-1.5"><ShieldCheck className="h-4 w-4 text-primary" />Compatible avec votre prise de rendez-vous en ligne</span>
         <span className="flex items-center gap-1.5"><ShieldCheck className="h-4 w-4 text-primary" />30 jours offerts, sans engagement</span>
       </div>
     </div>
@@ -332,7 +332,7 @@ const StepsSection = () => (
 );
 
 /* -------------------------------------------------------------------------- */
-/*  Confiance / RGPD                                                           */
+/*  Confiance                                                                  */
 /* -------------------------------------------------------------------------- */
 
 const TrustSection = () => (
@@ -347,7 +347,7 @@ const TrustSection = () => (
             <h2 className="text-xl md:text-2xl font-bold text-foreground font-heading mb-1">
               Données patients : on prend ça au sérieux
             </h2>
-            <p className="text-sm text-muted-foreground font-body">Vos obligations sont aussi les nôtres.</p>
+            <p className="text-sm text-muted-foreground font-body">Deux engagements, sans jargon.</p>
           </div>
         </div>
 
@@ -444,7 +444,7 @@ const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const faqs = [
-    { q: "Ça marche avec Doctolib ?", a: "Oui. EyesPilot se branche par-dessus sans rien changer à votre flux. Autre agenda ? On s'adapte lors de l'appel." },
+    { q: "Ça marche avec Doctolib ?", a: "Oui. EyesPilot fonctionne avec votre prise de rendez-vous en ligne (Doctolib ou autre) : le patient reçoit le lien par SMS." },
     { q: "Mon secrétariat doit faire quoi ?", a: "15 minutes de formation à l'installation, et c'est tout. Le système tourne seul ensuite." },
     { q: "Comment vous gérez les données patients ?", a: `Nous limitons les données au strict nécessaire. Pour le détail de notre traitement des données, contactez-nous : ${CONTACT_EMAIL}.` },
     { q: "En combien de temps c'est installé ?", a: "48 heures. Les premiers SMS partent ensuite, les premiers avis Google tombent sous 7 à 10 jours." },
